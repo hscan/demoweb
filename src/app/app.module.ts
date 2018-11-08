@@ -3,14 +3,20 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 
+import { DemotestService } from './shared/demotest/demotest.service';
+import { HttpClientModule } from '@angular/common/http';
+import { DemotestListComponent } from './demotest-list/demotest-list.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DemotestListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DemotestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
