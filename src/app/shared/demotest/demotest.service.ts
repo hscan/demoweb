@@ -11,6 +11,6 @@ export class DemotestService {
   }
 
   getAll(): Observable<any> {
-    return this.http.get('//localhost:8080/demotest-0.0.1-SNAPSHOT/api/noticia');
+    return this.http.get('//192.168.50.10:8080/demotest-0.0.1-SNAPSHOT/api/noticia');
   }
 }
